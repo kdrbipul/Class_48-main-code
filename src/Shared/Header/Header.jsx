@@ -6,9 +6,9 @@ import "./Header.css"
 const Header = () => {
     return (
        <>
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-neutral text-neutral-content">
                 <div className="flex-1">
-                    <a className="btn btn-ghost normal-case text-xl">REACT</a>
+                    <Link to='/' className="btn btn-ghost normal-case text-xl">REACT</Link>
                 </div>
                 <div className="flex-none">
                     <ul className="menu menu-horizontal px-1">
