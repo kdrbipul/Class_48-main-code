@@ -1,5 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+
+// const auth = getAuth();
+
+
 
 const Register = () => {
     
@@ -7,12 +12,6 @@ const Register = () => {
         e.preventDefault();
         console.log("handleSignup clicked");
     }
-    
-    
-    
-    
-    
-    
     
     return (
         <>
@@ -27,19 +26,19 @@ const Register = () => {
                                 <label className="label">
                                     <span className="label-text">Name</span>
                                 </label>
-                                <input type="text" name='name' placeholder="name" className="input input-bordered" />
+                                <input type="text" name='name' placeholder="name" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="email" name='email' placeholder="email" className="input input-bordered" />
+                                <input type="email" name='email' placeholder="email" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="password" name='password' placeholder="password" className="input input-bordered" />
+                                <input type="password" name='password' placeholder="password" className="input input-bordered" required />
                             <label className="label">
                                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                             </label>
