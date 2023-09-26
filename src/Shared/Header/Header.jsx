@@ -1,13 +1,13 @@
-import React, { useContext } from 'react';
+
 import { Link } from 'react-router-dom';
 import logo from "../../assets/react.svg";
-import { AuthContext } from '../../Context/UserContext';
+
 import "./Header.css"
 
 
 
 const Header = () => {
-    const {name} = useContext(AuthContext);
+    
     return (
        <>
             <div className="navbar bg-neutral text-neutral-content">
@@ -20,7 +20,6 @@ const Header = () => {
                         <li><Link to='/login'>Login</Link></li>
                         <li><Link to='/register'>Register</Link></li>
                         <li>
-                            <h1>{name}</h1>
                             <img className="w-10 rounded-full" src='' />
                         </li>
                     </ul>

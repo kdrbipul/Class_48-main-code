@@ -6,7 +6,7 @@ const Login = () => {
     
     const handleLogin = (e) => {
         e.preventDefault();
-        console.log("handleLogin clicked");
+        // console.log("handleLogin clicked");
     }
     
     

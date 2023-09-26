@@ -1,15 +1,15 @@
 import React, { useContext } from 'react';
-import { AuthContext } from '../../Context/UserContext';
 
-// const {name} = useContext(AuthContext);
+
 
 
 const Home = () => {
     
     
+    
     return (
-        <div>
-            {/* <h1>{name}</h1> */}
+        <div className='text-3xl'>
+            <h1>This is home</h1>
         </div>
     );
 };
