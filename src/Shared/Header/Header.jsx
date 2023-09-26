@@ -5,33 +5,21 @@ import "./Header.css"
 
 const Header = () => {
     return (
-        <div className="navbar bg-base-100">
-            <div className="flex-1">
-                <Link className="btn btn-ghost normal-case text-xl" to="/">Kader</Link>
-            </div>
-            <div className="flex-none gap-2">
-                <div className="form-control">
-                    <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
+       <>
+            <div className="navbar bg-base-100">
+                <div className="flex-1">
+                    <a className="btn btn-ghost normal-case text-xl">REACT</a>
                 </div>
-                <div className="dropdown dropdown-end">
-                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                    <div className="w-10 rounded-full">
-                        <img src={logo} />
-                    </div>
-                    </label>
-                    <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-                        <li>
-                        <a className="justify-between">
-                            Profile
-                            <span className="badge">New</span>
-                        </a>
-                        </li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
+                <div className="flex-none">
+                    <ul className="menu menu-horizontal px-1">
+                        <li><Link to='/'>Home</Link></li>
+                        <li><Link to='/login'>Login</Link></li>
+                        <li><Link to='/register'>Register</Link></li>
+                        <li><img className="w-10 rounded-full" src='' /></li>
                     </ul>
                 </div>
             </div>
-        </div>
+       </>
     );
 };
 
